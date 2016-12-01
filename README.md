@@ -1,2 +1,2 @@
-# awesm
+# Awesm!
 Art San Diego - Online Profile
