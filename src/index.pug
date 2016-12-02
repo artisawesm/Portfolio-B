@@ -1,0 +1,58 @@
+doctype
+html(lang = 'en')
+    head
+        meta(charset = 'UTF-8')
+        meta(name = 'viewport', content = 'width=device-width', initial-scale = '1.0', maximum-scale = '1.0', user-scalable = 'no')
+        meta(http-equiv = 'X-UA-Compatible', content = 'ie=edge')
+        meta(name = 'description', content = 'Online portfolio of Art San Diego, a freelance web developer and an aspiring front end web dev and ux designer. | November 2016')
+        meta(name = 'author', content = 'Artemio A. San Diego')
+        title Art San Diego | Portofolio
+        link(rel = 'shortcut icon' type = 'image/png' href = '#')
+        link(rel = 'stylesheet' type = 'text/css' href = './assets/css/lib/lib.min.css')
+        link(rel = 'stylesheet' type = 'text/css' href = './assets/css/app.min.css')
+
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    body
+        //===========
+        div.toType
+            p Aspiring <span class="emp">Front End Web Developer</span>
+            p <span class="emp">UX Designer</span> wanna be
+            p This is my <span class="emp">Story</span>
+
+        div.logo
+            a(href = "#intro"): include ./assets/images/logo.svg
+
+        div.button_container#toggle
+            span.top
+            span.middle
+            span.bottom
+
+        div.overlay#overlay
+            nav.overlay-menu
+                ul
+                    li: a(href = "#projects") Projects
+                    li: a(href = "#skills") Skills
+                    li: a(href = "#about") About
+                    li: a(href = "contact") Contact
+        //===========
+        div.fullpage
+            div.section#intro-section
+                div.top-image
+                div.back-image
+                div.container-fluid
+                    div.centerString
+                        div.staticString Hello, I'm Art
+                        span.typed
+                        div(class = "scroll-down animated bounce" id = "scroll-indicator")
+                            a(href = "#projects")
+                                span#triangle
+
+            div.section#project-section
+
+            div.section#skills-section
+
+        script(type = 'text/javascript' src = './assets/js/lib/lib.min.js')
+        script(type = 'text/javascript' src = './assets/js/app.min.js')

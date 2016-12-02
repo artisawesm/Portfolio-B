@@ -1,0 +1,5 @@
+#MODULES
+node_modules/
+
+#SCSS-LINT-ATOM CONFIG
+.scss-lint.yml

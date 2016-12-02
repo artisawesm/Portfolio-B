@@ -1,0 +1,54 @@
+//=========== FONTFACE
+@font-face {
+    font-family: "bebasBold";
+    src: url("../fonts/bebasneue/BebasNeue Bold.otf");
+}
+@font-face {
+    font-family: "bebasBook";
+    src: url("../fonts/bebasneue/BebasNeue Book.otf");
+}
+@font-face {
+    font-family: "bebasLight";
+    src: url("../fonts/bebasneue/BebasNeue Light.otf");
+}
+@font-face {
+    font-family: "bebasRegular";
+    src: url("../fonts/bebasneue/BebasNeue Regular.otf");
+}
+@font-face {
+    font-family: "bebasThin";
+    src: url("../fonts/bebasneue/BebasNeue Thin.otf");
+}
+//=========== FONTS
+$bBold: "bebasBold";
+$bBook: "bebasBook";
+$bLight: "bebasLight";
+$bRegular: "bebasRegular";
+$bThin: "bebasThin";
+//=========== COLORS
+$dark: #181C1D;
+$light: #ECF0F1;
+$accent: #BDC3C7;
+//=========== PATHS
+$imageTop: "../images/noise-transparent.png";
+$imageBack: "../images/noise-transparent.png";
+// $imageHtml: "../img/svg/logo/htmlcss.svg";
+// $imageSass: "../img/svg/logo/sass.svg";
+// $imageJquery: '../img/svg/logo/jquery.svg';
+// $imageJs: "../img/svg/logo/js.svg";
+// $imageGit: "../img/svg/logo/git.svg";
+// $imageAngular: "../img/svg/logo/angular.svg";
+// $imagePhp: "../img/svg/logo/php.svg";
+// $imageMysql: "../img/svg/logo/mysql.svg";
+// $imageCordova: "../img/svg/logo/cordova.svg";
+// $imageSwift: "../img/svg/logo/swift.svg";
+// $imageLaravel: "../img/svg/logo/laravel.svg";
+// $imageAi: "../img/svg/logo/ai.svg";
+// $imagePs: "../img/svg/logo/ps.svg";
+// $imageAndroid: "../img/svg/logo/android.svg";
+// $imageJava: "../img/svg/logo/java.svg";
+//=========== VALUES
+$staticFontSize: 20vmin;
+$dynamicFontSize: 12vmin;
+$masterHeight: 7.7em;
+$masterWidth: 20%;

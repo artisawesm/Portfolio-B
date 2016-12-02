@@ -1,0 +1,69 @@
+
+//=========== SCROLL BAR | SELECTION
+*::-webkit-scrollbar {
+    width: 0.4em;
+    height: 0.4em;
+    background: $dark;
+}
+
+*::-webkit-scrollbar-thumb {
+    opacity: 0.7;
+    background: $accent;
+}
+
+*::selection {
+    opacity: 0.5;
+    color: $accent;
+}
+
+//=========== LOGO
+.logo {
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    height: 100px;
+    width: 124px;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity 1s ease;
+    opacity: 0.3;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    #a_1_ {
+        animation-duration: 2.5s;
+    }
+    #s_1_ {
+        animation-duration: 3s;
+    }
+    #d-top {
+        animation-duration: 3.5s;
+    }
+    #d-bottom {
+        animation-duration: 4s;
+    }
+}
+
+//=========== MOVING BACKGROUND
+.background-image {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.top-image {
+    z-index: 1;
+    background: url($imageTop) no-repeat;
+    background-size: cover;
+    @extend .background-image;
+}
+
+.back-image {
+    z-index: 0;
+    background: url($imageBack) no-repeat;
+    background-size: cover;
+    @extend .background-image;
+}

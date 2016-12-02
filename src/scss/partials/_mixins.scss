@@ -1,0 +1,21 @@
+@mixin animation($type, $speed, $range) {
+    -webkit-animation: $type $speed $range;
+    -moz-animation: $type $speed $range;
+    -ms-animation: $type $speed $range;
+    -o-animation: $type $speed $range;
+    animation: $type $speed $range;
+}
+@mixin keyframes {
+     @-webkit-keyframes blink{
+        @content;
+    }
+    @-moz-keyframes blink {
+         @content;
+    }
+    @-o-keyframes blink {
+         @content;
+    }
+    @keyframes blink {
+         @content;
+    }
+}

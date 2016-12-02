@@ -1,0 +1,81 @@
+//=========== SECTIONS
+#intro-section {
+    overflow: hidden;
+    text-align: center;
+    background-color: $dark;
+
+    .scroll-down {
+        position: absolute;
+        z-index: 100;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0 0 2em;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        opacity: 0;
+    }
+
+    #triangle {
+        width: 0;
+        height: 0;
+        border-top: 30px solid $accent;
+        border-right: 30px solid transparent;
+        border-left: 30px solid transparent;
+    }
+}
+
+//=========== TYPED
+@include keyframes {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+};
+
+.typed-cursor {
+    font-size: $dynamicFontSize;
+    position: relative;
+    top: -5px;
+    opacity: 1;
+    color: $accent;
+    @include animation(blink, .7s, infinite);
+}
+
+.toType {
+    display: none;
+}
+
+.centerString {
+    display: inline;
+    width: 50%;
+    margin: 0 auto;
+
+    .staticString {
+        font-family: $bBook;
+        font-size: $staticFontSize;
+        color: $light;
+    }
+
+    .emp {
+        background-color: $accent;
+        color: $dark;
+        line-height: 1em;
+        display: inline;
+    }
+
+    .typed {
+        font-family: $bLight;
+        font-size: $dynamicFontSize;
+        line-height: 80%;
+        display: inline-block;
+        color: $light;
+    }
+}
