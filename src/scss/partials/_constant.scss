@@ -21,8 +21,6 @@
     position: fixed;
     top: 10%;
     left: 5%;
-    height: 100px;
-    width: 124px;
     cursor: pointer;
     z-index: 100;
     transition: opacity 1s ease;
@@ -30,6 +28,11 @@
 
     &:hover {
         opacity: 1;
+    }
+
+    #logo {
+        height: 18vmin;
+        width: 18vmin;
     }
 
     #a_1_ {
@@ -66,4 +69,20 @@
     background: url($imageBack) no-repeat;
     background-size: cover;
     @extend .background-image;
+}
+
+//=========== HEADER
+.awesm-header {
+    font-family: $bBook;
+    font-size: 8vmin;
+    line-height: 1em;
+    display: inline-block;
+    padding: 0 0.5em;
+    cursor: pointer;
+    top: 20px;
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    color: $dark;
+    background: $light;
 }

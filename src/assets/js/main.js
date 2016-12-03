@@ -16,7 +16,16 @@ $(document).ready(function (){
         anchors: ['intro', 'projects', 'skills'],
         fitToSection: false,
         loopBottom: true,
-        scrollBar: true
+        scrollBar: true,
+        afterLoad: function(anchorLink){
+            if (anchorLink == 'projects') {
+                $('.awesm-header').addClass('animated fadeInLeftBig');
+                setTimeout(function() {
+                    $('.awesm-header').removeClass('fadeInLeftBig');
+                    $('.awesm-header').addClass('fadeOutLeftBig');
+                }, 3000);
+            }
+        },
     });
 
     //=========== TYPED JS

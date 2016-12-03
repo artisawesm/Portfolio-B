@@ -1,0 +1,50 @@
+#project-section {
+    .side-container {
+        display: flex; /* equal height of the children */
+        height: 100%;
+    }
+
+    .sides {
+        flex: 1; /* additionally, equal width */
+        padding: 1em;
+    }
+
+    .code-design-master {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .code-design-content-master {
+        align-self: center;
+        height: $design-code-dim;
+        width: $design-code-dim;
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+        z-index: 100;
+        @include transition(all, 1s);
+
+        &:hover {
+            @include scale(1.1);
+        }
+    }
+
+    #dark-side {
+        @extend .code-design-master;
+        background-color: $dark;
+        .code {
+            background-image: url($code);
+            @extend .code-design-content-master;
+        }
+    }
+
+    #light-side {
+        @extend .code-design-master;
+        background-color: $light;
+        .design {
+            background-image: url($design);
+            @extend .code-design-content-master;
+        }
+    }
+}
