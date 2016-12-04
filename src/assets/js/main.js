@@ -12,6 +12,14 @@ $(document).ready(function (){
     });
 
     //=========== FULLPAGE JS
+    var awesmHeader = function($element){
+        $($element).find('.awesm-header').addClass('animated fadeInLeftBig');
+        setTimeout(function() {
+            $($element).find('.awesm-header').removeClass('fadeInLeftBig');
+            $($element).find('.awesm-header').addClass('fadeOutLeftBig');
+        }, 3000);
+    };
+
     $('.fullpage').fullpage({
         anchors: ['intro', 'projects', 'skills'],
         fitToSection: false,
@@ -19,14 +27,22 @@ $(document).ready(function (){
         scrollBar: true,
         afterLoad: function(anchorLink){
             if (anchorLink == 'projects') {
-                $('.awesm-header').addClass('animated fadeInLeftBig');
-                setTimeout(function() {
-                    $('.awesm-header').removeClass('fadeInLeftBig');
-                    $('.awesm-header').addClass('fadeOutLeftBig');
-                }, 3000);
+                awesmHeader($('#project-section'));
+            }else if (anchorLink == 'skills') {
+                awesmHeader($('#skills-section'));
             }
         },
     });
+
+    //=========== TYPED JS
+    wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 10,
+        mobile: true,
+        live: true,
+    });
+    wow.init();
 
     //=========== TYPED JS
     $('.typed').typed({
