@@ -1,4 +1,292 @@
 #skills-section {
     background-color: $dark;
 
+    .category {
+        font-family: $bBook;
+        text-align: center;
+        color: $light;
+    }
+
+    .master-skill {
+        display: flex;
+        border: 0.5em solid $dark;
+    }
+
+    .master-icon {
+        margin-right: 0.5em;
+        float: left;
+        height: 8vmin;
+        width: 10vmin;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .master-skill-level {
+        float: left;
+        height: 8vmin;
+        width: 100%;
+        background-color: $light;
+    }
+
+    .master-skill-level-val {
+        height: 8vmin;
+        width: 0px;
+        background-color: $accent;
+    }
+
+    .skill-htmlcss {
+        @extend .master-skill;
+
+        .skill-icon {
+            @extend .master-icon;
+            background-image: url($imageHtml);
+        }
+
+        .skill-level {
+            @extend .master-skill-level;
+
+            .skill-level-val {
+                @extend .master-skill-level-val;
+            }
+        }
+    }
+
+    .skill-sass {
+        @extend .master-skill;
+
+        .skill-icon {
+            @extend .master-icon;
+            background-image: url($imageSass);
+        }
+
+        .skill-level {
+            @extend .master-skill-level;
+
+            .skill-level-val {
+                @extend .master-skill-level-val;
+            }
+        }
+    }
+
+    .skill-jquery {
+        @extend .master-skill;
+
+        .skill-icon {
+            @extend .master-icon;
+            background-image: url($imageJquery);
+        }
+
+        .skill-level {
+            @extend .master-skill-level;
+
+            .skill-level-val {
+                @extend .master-skill-level-val;
+            }
+        }
+    }
+
+    .skill-javascript {
+        @extend .master-skill;
+
+        .skill-icon {
+            @extend .master-icon;
+            background-image: url($imageJs);
+        }
+
+        .skill-level {
+            @extend .master-skill-level;
+
+            .skill-level-val {
+                @extend .master-skill-level-val;
+            }
+        }
+    }
+
+    .skill-angularjs {
+        @extend .master-skill;
+
+        .skill-icon {
+            @extend .master-icon;
+            background-image: url($imageAngular);
+        }
+
+        .skill-level {
+            @extend .master-skill-level;
+
+            .skill-level-val {
+                @extend .master-skill-level-val;
+            }
+        }
+    }
+
+    .skill-php {
+        @extend .master-skill;
+
+        .skill-icon {
+            @extend .master-icon;
+            background-image: url($imagePhp);
+        }
+
+        .skill-level {
+            @extend .master-skill-level;
+
+            .skill-level-val {
+                @extend .master-skill-level-val;
+            }
+        }
+    }
+
+    .skill-mysqli {
+        @extend .master-skill;
+
+        .skill-icon {
+            @extend .master-icon;
+            background-image: url($imageMysqli);
+        }
+
+        .skill-level {
+            @extend .master-skill-level;
+
+            .skill-level-val {
+                @extend .master-skill-level-val;
+            }
+        }
+    }
+
+    .skill-android {
+        @extend .master-skill;
+
+        .skill-icon {
+            @extend .master-icon;
+            background-image: url($imageAndroid);
+        }
+
+        .skill-level {
+            @extend .master-skill-level;
+
+            .skill-level-val {
+                @extend .master-skill-level-val;
+            }
+        }
+    }
+
+    .skill-java {
+        @extend .master-skill;
+
+        .skill-icon {
+            @extend .master-icon;
+            background-image: url($imageJava);
+        }
+
+        .skill-level {
+            @extend .master-skill-level;
+
+            .skill-level-val {
+                @extend .master-skill-level-val;
+            }
+        }
+    }
+
+    .skill-ai {
+        @extend .master-skill;
+
+        .skill-icon {
+            @extend .master-icon;
+            background-image: url($imageAi);
+        }
+
+        .skill-level {
+            @extend .master-skill-level;
+
+            .skill-level-val {
+                @extend .master-skill-level-val;
+            }
+        }
+    }
+
+    .skill-ps {
+        @extend .master-skill;
+
+        .skill-icon {
+            @extend .master-icon;
+            background-image: url($imagePs);
+        }
+
+        .skill-level {
+            @extend .master-skill-level;
+
+            .skill-level-val {
+                @extend .master-skill-level-val;
+            }
+        }
+    }
+
+    .skill-sass {
+        @extend .master-skill;
+
+        .skill-icon {
+            @extend .master-icon;
+            background-image: url($imageSass);
+        }
+
+        .skill-level {
+            @extend .master-skill-level;
+
+            .skill-level-val {
+                @extend .master-skill-level-val;
+            }
+        }
+    }
+
+    .skill-git {
+        @extend .master-skill;
+
+        .skill-icon {
+            @extend .master-icon;
+            background-image: url($imageGit);
+        }
+
+        .skill-level {
+            @extend .master-skill-level;
+
+            .skill-level-val {
+                @extend .master-skill-level-val;
+            }
+        }
+    }
+
+    .skill-npm {
+        @extend .master-skill;
+
+        .skill-icon {
+            @extend .master-icon;
+            background-image: url($imageNpm);
+        }
+
+        .skill-level {
+            @extend .master-skill-level;
+
+            .skill-level-val {
+                @extend .master-skill-level-val;
+            }
+        }
+    }
+
+    .skill-gulp {
+        @extend .master-skill;
+
+        .skill-icon {
+            @extend .master-icon;
+            background-image: url($imageGulp);
+        }
+
+        .skill-level {
+            @extend .master-skill-level;
+
+            .skill-level-val {
+                @extend .master-skill-level-val;
+            }
+        }
+    }
+
 }

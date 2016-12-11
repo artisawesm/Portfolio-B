@@ -25,11 +25,15 @@ $(document).ready(function (){
         fitToSection: false,
         loopBottom: true,
         scrollBar: true,
+        normalScrollElements: '.normalSroll',
         afterLoad: function(anchorLink){
             if (anchorLink == 'projects') {
                 awesmHeader($('#project-section'));
             }else if (anchorLink == 'skills') {
                 awesmHeader($('#skills-section'));
+                $('.skill-level-val').animate({
+                    width: '100px'
+                }, 1000);
             }
         },
     });

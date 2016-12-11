@@ -103,3 +103,6 @@ gulp.task('serve', function(){
 });
 
 gulp.task('default', ['serve']);
+//STAND ALONE TASKS
+//compile
+//compress-images
