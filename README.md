@@ -12,7 +12,7 @@ In developing this project I've used <br/>
 -NPM <br/>
 -GULP (Awesome) <br/>
 -PUG.js (formerly known as JADE) <br/>
--SCSS <br/>
+-SASS <br/>
 -jQuery <br/>
 -JS frameworks <br/>
 -Bootstrap <br/>
