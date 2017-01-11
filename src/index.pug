@@ -6,6 +6,7 @@ html(lang = 'en')
         meta(http-equiv = 'X-UA-Compatible', content = 'ie=edge')
         meta(name = 'description', content = 'Online portfolio of Art San Diego, a freelance web developer and an aspiring front end web dev and ux designer. | November 2016')
         meta(name = 'author', content = 'Artemio A. San Diego')
+        meta(name = 'keywords', content = 'portfolio, art san diego, artemio san diego, web development, front end web development')
         title Art San Diego | Portofolio
         link(rel = 'shortcut icon' type = 'image/png' href = './assets/images/logo.png')
         link(rel = 'stylesheet' type = 'text/css' href = './assets/css/lib/lib.min.css')
@@ -59,83 +60,91 @@ html(lang = 'en')
                         div(class = "design wow animated fadeInDown")
 
             div.section#skills-section
-                div.normalScroll
-                div.container-fluid
-                    div.awesm-header Skills
-                    div.row
-                        div(class = "col-lg-3")
-                            h1.category Front End
-                            div.skill-htmlcss
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            div.skill-sass
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            div.skill-jquery
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            div.skill-javascript
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            div.skill-angularjs
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                        div(class = "col-lg-3")
-                            h1.category Back End
-                            div.skill-php
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            div.skill-mysqli
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            h1.category Mobile | OOP
-                            div.skill-android
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            div.skill-java
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                        div(class = "col-lg-3")
-                            h1.category Design
-                            div.skill-ai
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            div.skill-ps
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            h1.category Preprocessor
-                            div.skill-sass
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                        div(class = "col-lg-3")
-                            h1.category Version Control
-                            div.skill-git
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            h1.category Package Manager
-                            div.skill-npm
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            h1.category Task Runner
-                            div.skill-gulp
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
+                div.skillScroll
+                    div.container-fluid
+                        div.awesm-header Skills
+                        div.row
+                            div(class = "col-lg-4 col-md-4 col-sm-4 col-xs-12")
+                                h1.category Front End
+                                div.skill-htmlcss
+                                    div.skill-icon
+                                    div.skill-level
+                                        div.skill-level-val
+                                div.skill-sass
+                                    div.skill-icon
+                                    div.skill-level
+                                        div.skill-level-val
+                                div.skill-jquery
+                                    div.skill-icon
+                                    div.skill-level
+                                        div.skill-level-val
+                                div.skill-javascript
+                                    div.skill-icon
+                                    div.skill-level
+                                        div.skill-level-val
+                                div.skill-angularjs
+                                    div.skill-icon
+                                    div.skill-level
+                                        div.skill-level-val
+                            div(class = "col-lg-4 col-md-4 col-sm-4 col-xs-12")
+                                h1.category Back End
+                                div.skill-php
+                                    div.skill-icon
+                                    div.skill-level
+                                        div.skill-level-val
+                                div.skill-mysqli
+                                    div.skill-icon
+                                    div.skill-level
+                                        div.skill-level-val
+                                h1.category Mobile | OOP
+                                div.skill-android
+                                    div.skill-icon
+                                    div.skill-level
+                                        div.skill-level-val
+                                div.skill-java
+                                    div.skill-icon
+                                    div.skill-level
+                                        div.skill-level-val
+                            div(class = "col-lg-4 col-md-4 col-sm-4 col-xs-12")
+                                h1.category Design
+                                div.skill-ai
+                                    div.skill-icon
+                                    div.skill-level
+                                        div.skill-level-val
+                                div.skill-ps
+                                    div.skill-icon
+                                    div.skill-level
+                                        div.skill-level-val
+                                h1.category Html Preprocessor
+                                div.skill-pug
+                                    div.skill-icon
+                                    div.skill-level
+                                        div.skill-level-val
+                                div.tools
+                                    div.skill-git
+                                        div.skill-icon
+                                    div.skill-npm
+                                        div.skill-icon
+                                    div.skill-gulp
+                                        div.skill-icon
 
+                            //- div(class = "col-lg-3 col-md-3 col-sm-3 col-xs-12")
+                            //-     h1.category Version Control
+                            //-     div.skill-git
+                            //-         div.skill-icon
+                            //-         div.skill-level
+                            //-             div.skill-level-val
+                            //-     h1.category Package Manager
+                            //-     div.skill-npm
+                            //-         div.skill-icon
+                            //-         div.skill-level
+                            //-             div.skill-level-val
+                            //-     h1.category Task Runner
+                            //-     div.skill-gulp
+                            //-         div.skill-icon
+                            //-         div.skill-level
+                            //-             div.skill-level-val
+            div.section#about-section
 
 
         script(type = 'text/javascript' src = './assets/js/lib/lib.min.js')

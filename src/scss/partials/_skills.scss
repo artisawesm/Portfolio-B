@@ -5,6 +5,7 @@
         font-family: $bBook;
         text-align: center;
         color: $light;
+        font-size: 5vmin;
     }
 
     .master-skill {
@@ -221,12 +222,12 @@
         }
     }
 
-    .skill-sass {
+    .skill-pug {
         @extend .master-skill;
 
         .skill-icon {
             @extend .master-icon;
-            background-image: url($imageSass);
+            background-image: url($imagePug);
         }
 
         .skill-level {
@@ -238,55 +239,49 @@
         }
     }
 
-    .skill-git {
-        @extend .master-skill;
+    // STAND ALONE
+    .tools {
 
-        .skill-icon {
-            @extend .master-icon;
-            background-image: url($imageGit);
+        .skill-git {
+            @extend .master-skill;
+            float: left;
+
+            .skill-icon {
+                height: 10vmin;
+                width: 10vmin;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url($imageGit);
+            }
+
         }
 
-        .skill-level {
-            @extend .master-skill-level;
+        .skill-npm {
+            @extend .master-skill;
+            float: left;
 
-            .skill-level-val {
-                @extend .master-skill-level-val;
+            .skill-icon {
+                height: 10vmin;
+                width: 10vmin;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url($imageNpm);
+            }
+        }
+
+        .skill-gulp {
+            @extend .master-skill;
+            float: left;
+
+            .skill-icon {
+                height: 10vmin;
+                width: 10vmin;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url($imageGulp);
             }
         }
     }
 
-    .skill-npm {
-        @extend .master-skill;
-
-        .skill-icon {
-            @extend .master-icon;
-            background-image: url($imageNpm);
-        }
-
-        .skill-level {
-            @extend .master-skill-level;
-
-            .skill-level-val {
-                @extend .master-skill-level-val;
-            }
-        }
-    }
-
-    .skill-gulp {
-        @extend .master-skill;
-
-        .skill-icon {
-            @extend .master-icon;
-            background-image: url($imageGulp);
-        }
-
-        .skill-level {
-            @extend .master-skill-level;
-
-            .skill-level-val {
-                @extend .master-skill-level-val;
-            }
-        }
-    }
 
 }

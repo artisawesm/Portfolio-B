@@ -20,20 +20,58 @@ $(document).ready(function (){
         }, 3000);
     };
 
+    var skillLevel = function(){
+        $('.skill-htmlcss').find('.skill-level-val').animate({
+            width: '90%'
+        }, 1000);
+        $('.skill-sass').find('.skill-level-val').animate({
+            width: '70%'
+        }, 1000);
+        $('.skill-jquery').find('.skill-level-val').animate({
+            width: '60%'
+        }, 1000);
+        $('.skill-javascript').find('.skill-level-val').animate({
+            width: '40%'
+        }, 1000);
+        $('.skill-angularjs').find('.skill-level-val').animate({
+            width: '10%'
+        }, 1000);
+        $('.skill-php').find('.skill-level-val').animate({
+            width: '70%'
+        }, 1000);
+        $('.skill-mysqli').find('.skill-level-val').animate({
+            width: '60%'
+        }, 1000);
+        $('.skill-android').find('.skill-level-val').animate({
+            width: '40%'
+        }, 1000);
+        $('.skill-java').find('.skill-level-val').animate({
+            width: '40%'
+        }, 1000);
+        $('.skill-ai').find('.skill-level-val').animate({
+            width: '70%'
+        }, 1000);
+        $('.skill-ps').find('.skill-level-val').animate({
+            width: '70%'
+        }, 1000);
+        $('.skill-pug').find('.skill-level-val').animate({
+            width: '30%'
+        }, 1000);
+    };
+
     $('.fullpage').fullpage({
         anchors: ['intro', 'projects', 'skills'],
         fitToSection: false,
         loopBottom: true,
         scrollBar: true,
-        normalScrollElements: '.normalSroll',
+        normalScrollElements: '.skillScroll',
+        normalScrollElementTouchThreshold: 5,
         afterLoad: function(anchorLink){
             if (anchorLink == 'projects') {
                 awesmHeader($('#project-section'));
             }else if (anchorLink == 'skills') {
                 awesmHeader($('#skills-section'));
-                $('.skill-level-val').animate({
-                    width: '100px'
-                }, 1000);
+                skillLevel();
             }
         },
     });
