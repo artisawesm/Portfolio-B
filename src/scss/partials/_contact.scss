@@ -1,0 +1,12 @@
+#contact-section {
+    background-color: $dark;
+    .contact-content {
+        margin: auto;
+        height: auto;
+        width: auto;
+        position: relative;
+        h1 {
+            font-family: $bBold;
+        }
+    }
+}

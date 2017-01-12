@@ -1,0 +1,88 @@
+#about-section {
+    .side-container {
+        display: flex; /* equal height of the children */
+        height: 100%;
+    }
+
+    .sides {
+        flex: 1; /* additionally, equal width */
+        padding: 1em;
+    }
+
+    .code-design-master {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .code-design-content-master {
+        align-self: center;
+        height: $about-logo-dim;
+        width: $about-logo-dim;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 100;
+        opacity: 0.1;
+        @include transition(all, 1s);
+
+        &:hover {
+            @include scale(1.05);
+        }
+    }
+
+    #dark-side {
+        @extend .code-design-master;
+        background-color: $dark;
+        .about-logo {
+            background-image: url($logo);
+            position: absolute;
+            @extend .code-design-content-master;
+        }
+        .about-content {
+            color: $light;
+            font-family: $bRegular;
+            position: absolute;
+            left: 1em;
+            top: 6.5em;
+            font-size: 3vmin;
+            margin: 0 0.5em 0 0.5em;
+            @media (max-width: 360px){
+                font-size: 4vmin;
+            }
+            h1 {
+                font-family: $bBold;
+            }
+            hr {
+                border: 5px solid $accent;
+            }
+        }
+    }
+
+    #light-side {
+        @extend .code-design-master;
+        background-color: $light;
+        .me {
+            background-image: url($me);
+            position: absolute;
+            @extend .code-design-content-master;
+            opacity: 0.5;
+            position: absolute;
+            right: 0;
+        }
+        .me-content {
+            z-index: 200;
+            position: absolute;
+            top: 6.5em;
+            font-family: $bRegular;
+            font-size: 3vmin;
+            color: $dark;
+            margin: 0 0.5em 0 0.5em;
+            @media (max-width: 360px){
+                font-size: 4vmin;
+            }
+            h1 {
+                font-family: $bBold;
+            }
+        }
+    }
+}

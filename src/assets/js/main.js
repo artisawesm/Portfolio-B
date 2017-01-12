@@ -60,7 +60,7 @@ $(document).ready(function (){
     };
 
     $('.fullpage').fullpage({
-        anchors: ['intro', 'projects', 'skills'],
+        anchors: ['intro', 'projects', 'skills', 'about', 'contact'],
         fitToSection: false,
         loopBottom: true,
         scrollBar: true,
@@ -72,6 +72,10 @@ $(document).ready(function (){
             }else if (anchorLink == 'skills') {
                 awesmHeader($('#skills-section'));
                 skillLevel();
+            }else if (anchorLink == 'about') {
+                awesmHeader($('#about-section'));
+            }else if (anchorLink == 'contact'){
+                awesmHeader($('#contact-section'));
             }
         },
     });
@@ -101,7 +105,7 @@ $(document).ready(function (){
     });
 
     //=========== MOVING BACKGROUND
-    var movementStrength = 35;
+    var movementStrength = 25;
     var height = movementStrength / $(window).height();
     var width = movementStrength / $(window).width();
     $('.top-image').mousemove(function(e) {
