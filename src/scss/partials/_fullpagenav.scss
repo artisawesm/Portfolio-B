@@ -60,7 +60,7 @@
     opacity: 1;
     visibility: hidden;
     transition: opacity 0.35s, visibility 0.35s, width 0.35s;
-    z-index: 50;
+    z-index: 999;
 
     &:before {
         content: '';
