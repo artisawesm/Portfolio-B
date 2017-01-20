@@ -5,7 +5,7 @@
     height: 50px;
     width: 50px;
     cursor: pointer;
-    z-index: 100;
+    z-index: 300;
     transition: opacity 1s ease;
     opacity: 0.3;
 
@@ -60,7 +60,7 @@
     opacity: 1;
     visibility: hidden;
     transition: opacity 0.35s, visibility 0.35s, width 0.35s;
-    z-index: 999;
+    z-index: 200;
 
     &:before {
         content: '';

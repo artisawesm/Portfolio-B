@@ -62,9 +62,9 @@ $(document).ready(function (){
     $('.fullpage').fullpage({
         anchors: ['intro', 'projects', 'skills', 'about', 'contact'],
         fitToSection: false,
-        loopBottom: true,
+        loopBottom: false,
         scrollBar: true,
-        normalScrollElements: '.skillScroll',
+        autoScrolling: true,
         normalScrollElementTouchThreshold: 5,
         afterLoad: function(anchorLink){
             if (anchorLink == 'projects') {
@@ -79,6 +79,9 @@ $(document).ready(function (){
             }
         },
     });
+
+    //=========== SLIM SCROLL
+    // $('.normalScroll').slimScroll();
 
     //=========== TYPED JS
     wow = new WOW({

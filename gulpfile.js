@@ -33,6 +33,7 @@ var path = {
         './src/assets/js/lib/scrolloverflow.min.js',
         './src/assets/js/lib/typed.js',
         './src/assets/js/lib/wow.min.js',
+        './src/assets/js/lib/jquery.slimscroll.min.js'
     ]
 };
 

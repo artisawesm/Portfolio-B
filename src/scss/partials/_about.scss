@@ -31,6 +31,7 @@
         .about-logo {
             background-image: url($logo);
             position: absolute;
+            background-position: center;
             @extend .code-design-content-master;
         }
         .about-content {
@@ -40,15 +41,17 @@
             left: 1em;
             top: 6.5em;
             font-size: 3vmin;
-            margin: 0 0.5em 0 0.5em;
-            @media (max-width: 360px){
+            transition: all 1s;
+            @media all and (max-width: 276px){
                 font-size: 4vmin;
             }
             h1 {
                 font-family: $bBold;
-            }
-            hr {
-                border: 5px solid $accent;
+                font-size: 4vmin;
+                transition: all 1s;
+                @media all and (max-width: 276px){
+                    font-size: 8vmin;
+                }
             }
         }
     }
@@ -61,22 +64,28 @@
             position: absolute;
             @extend .code-design-content-master;
             opacity: 0.5;
-            position: absolute;
+            background-position: center;
             right: 0;
         }
         .me-content {
-            z-index: 200;
+            z-index: 100;
             position: absolute;
             top: 6.5em;
             font-family: $bRegular;
             font-size: 3vmin;
             color: $dark;
             margin: 0 0.5em 0 0.5em;
-            @media (max-width: 360px){
+            transition: all 1s;
+            @media all and (max-width: 276px){
                 font-size: 4vmin;
             }
             h1 {
                 font-family: $bBold;
+                font-size: 4vmin;
+                transition: all 1s;
+                @media all and (max-width: 276px){
+                    font-size: 8vmin;
+                }
             }
         }
     }
