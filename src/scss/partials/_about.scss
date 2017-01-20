@@ -23,11 +23,6 @@
         background-size: contain;
         z-index: 100;
         opacity: 0.1;
-        @include transition(all, 1s);
-
-        &:hover {
-            @include scale(1.05);
-        }
     }
 
     #dark-side {
