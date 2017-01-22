@@ -47,10 +47,10 @@
             }
             h1 {
                 font-family: $bBold;
-                font-size: 4vmin;
+                font-size: 6vmin;
                 transition: all 1s;
                 @media all and (max-width: 276px){
-                    font-size: 8vmin;
+                    font-size: 10vmin;
                 }
             }
         }
@@ -60,12 +60,18 @@
         @extend .code-design-master;
         background-color: $light;
         .me {
+            // background-image: url($me);
+            // position: absolute;
+            // background-position: center;
+            // background-size: contain;
+            // @extend .code-design-content-master;
+            // opacity: 0.5;
+            // right: 0;
             background-image: url($me);
             position: absolute;
+            background-position: center;
             @extend .code-design-content-master;
             opacity: 0.5;
-            background-position: center;
-            right: 0;
         }
         .me-content {
             z-index: 100;
@@ -81,10 +87,10 @@
             }
             h1 {
                 font-family: $bBold;
-                font-size: 4vmin;
+                font-size: 6vmin;
                 transition: all 1s;
                 @media all and (max-width: 276px){
-                    font-size: 8vmin;
+                    font-size: 10vmin;
                 }
             }
         }

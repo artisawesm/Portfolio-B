@@ -10,6 +10,9 @@
             font-family: $bBold;
             color: $light;
             font-size: 5vmin;
+            @media all and (max-width: 400px) {
+                font-size: 7vmin;
+            }
         }
     }
 }

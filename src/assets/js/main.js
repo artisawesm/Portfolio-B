@@ -79,10 +79,7 @@ $(document).ready(function (){
             }
         },
     });
-
-    //=========== SLIM SCROLL
-    // $('.normalScroll').slimScroll();
-
+    
     //=========== TYPED JS
     wow = new WOW({
         boxClass: 'wow',

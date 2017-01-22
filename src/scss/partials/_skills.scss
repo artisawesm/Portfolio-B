@@ -1,11 +1,14 @@
 #skills-section {
     background-color: $dark;
-    
+
     .category {
         font-family: $bBook;
         text-align: center;
         color: $light;
         font-size: 5vmin;
+        @media all and (max-width: 400px) {
+            font-size: 3.5vmin;
+        }
     }
 
     .master-skill {
@@ -19,7 +22,7 @@
         height: 7vmin;
         width: 9vmin;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
 
     .master-skill-level {
@@ -27,12 +30,21 @@
         height: 7vmin;
         width: 100%;
         background-color: $light;
+        transition: all 1s;
+        @media all and (max-width: 400px) {
+            height: 5vmin;
+            width: 100%;
+        }
     }
 
     .master-skill-level-val {
         height: 7vmin;
         width: 0px;
         background-color: $accent;
+        @media all and (max-width: 400px) {
+            height: 5vmin;
+            width: 100%;
+        }
     }
 
     .skill-htmlcss {
@@ -239,46 +251,61 @@
         }
     }
 
-    // STAND ALONE
+    // OTHER SKILLS
     .tools {
 
         .skill-git {
             @extend .master-skill;
-            float: left;
+            display: inline-block;
 
             .skill-icon {
                 height: 8vmin;
                 width: 8vmin;
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: contain;
                 background-image: url($imageGit);
+                transition: all 1s;
+                @media all and (max-width: 400px) {
+                    height: 4vmin;
+                    width: 4vmin;
+                }
             }
 
         }
 
         .skill-npm {
             @extend .master-skill;
-            float: left;
+            display: inline-block;
 
             .skill-icon {
                 height: 10vmin;
                 width: 10vmin;
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: contain;
                 background-image: url($imageNpm);
+                transition: all 1s;
+                @media all and (max-width: 400px) {
+                    height: 4vmin;
+                    width: 4vmin;
+                }
             }
         }
 
         .skill-gulp {
             @extend .master-skill;
-            float: left;
+            display: inline-block;
 
             .skill-icon {
                 height: 8vmin;
                 width: 8vmin;
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: contain;
                 background-image: url($imageGulp);
+                transition: all 1s;
+                @media all and (max-width: 400px) {
+                    height: 4vmin;
+                    width: 4vmin;
+                }
             }
         }
     }

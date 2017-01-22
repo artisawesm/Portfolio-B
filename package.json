@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/artisawesm/awesm.git"
+    "url": "git+https://github.com/artisawesm/artisawesm.github.io.git"
   },
   "keywords": [],
   "author": "Art San Diego",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/artisawesm/awesm/issues"
+    "url": "https://github.com/artisawesm/artisawesm.github.io.git/issues"
   },
-  "homepage": "https://github.com/artisawesm/awesm#readme",
+  "homepage": "https://github.com/artisawesm/artisawesm.github.io.git#readme",
   "devDependencies": {
     "browser-sync": "^2.18.6",
     "gulp": "^3.9.1",
