@@ -1,16 +1,15 @@
 #project-section {
     .side-container {
-        display: flex; /* equal height of the children */
+        display: flex;
         height: 100%;
     }
 
     .sides {
-        flex: 1; /* additionally, equal width */
+        flex: 1;
         padding: 1em;
     }
 
     .code-design-master {
-        flex: 1;
         display: flex;
         justify-content: center;
     }
@@ -23,11 +22,6 @@
         background-size: contain;
         cursor: pointer;
         z-index: 100;
-        @include transition(all, 1s);
-
-        &:hover {
-            @include scale(1.1);
-        }
     }
 
     #dark-side {
@@ -36,6 +30,21 @@
         .code {
             background-image: url($code);
             @extend .code-design-content-master;
+            position: relative;
+            &:hover:after {
+                width: 100%;
+            }
+            &:after {
+                content: " ";
+                background-color: $light;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                height: 8px;
+                width: 0;
+                transition: all 0.5s ease;
+                transform: translateX(-50%);
+            }
         }
     }
 
@@ -45,6 +54,21 @@
         .design {
             background-image: url($design);
             @extend .code-design-content-master;
+            position: relative;
+            &:hover:after {
+                width: 100%;
+            }
+            &:after {
+                content: " ";
+                background-color: $dark;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                height: 8px;
+                width: 0;
+                transition: all 0.5s ease;
+                transform: translateX(-50%);
+            }
         }
     }
 }

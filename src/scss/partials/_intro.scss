@@ -10,7 +10,7 @@
         bottom: 0;
         left: 0;
         margin: 0 0 2em;
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-iteration-count: infinite;
         opacity: 0;
     }
@@ -61,6 +61,30 @@
         font-family: $bBook;
         font-size: $staticFontSize;
         color: $light;
+        animation-duration: 2s;
+        .name {
+            position: relative;
+            &:before {
+                content: " ";
+                height: 2vmin;
+                width: 100%;
+                top: 0;
+                position: absolute;
+                background-color: $light;
+                left: 0;
+                @include animation(fadeInLeftBig, 5s, 1);
+            }
+            &:after {
+                content: " ";
+                height: 2vmin;
+                width: 100%;
+                background-color: $light;
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                @include animation(fadeInRightBig, 5s, 1);
+            }
+        }
     }
 
     .emp {

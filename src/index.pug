@@ -41,12 +41,12 @@ html(lang = 'en')
                     li: a(href = "#contact") Contact
         //===========
         div.fullpage
+            div.top-image
             div.section#intro-section
-                div.top-image
-                div.back-image
+                //- div.back-image
                 div.container-fluid
                     div.centerString
-                        div.staticString Hello, I'm Art
+                        div(class = "staticString animated fadeInDown") Hello, I'm <span class="name">Art</span>
                         span.typed
                         div(class = "scroll-down animated bounce" id = "scroll-indicator")
                             a(href = "#projects")
@@ -127,34 +127,26 @@ html(lang = 'en')
                                     div.skill-icon
                                 div.skill-gulp
                                     div.skill-icon
-
-                        //- div(class = "col-lg-3 col-md-3 col-sm-3 col-xs-12")
-                        //-     h1.category Version Control
-                        //-     div.skill-git
-                        //-         div.skill-icon
-                        //-         div.skill-level
-                        //-             div.skill-level-val
-                        //-     h1.category Package Manager
-                        //-     div.skill-npm
-                        //-         div.skill-icon
-                        //-         div.skill-level
-                        //-             div.skill-level-val
-                        //-     h1.category Task Runner
-                        //-     div.skill-gulp
-                        //-         div.skill-icon
-                        //-         div.skill-level
-                        //-             div.skill-level-val
             div.section#about-section
                 div.side-container
                     div.awesm-header About
                     div.sides#dark-side
                         div.about-logo
                         div.about-content
-                            h1 Experience
-                            p Oct 2016 - Present <br/> Freelance Web Developer
-                            p Nov 2015 - Feb 2016 <br/> MSI-ECS (PHILS) INC <br/> Student Trainee (OJT)
-                            h1 Education
-                            p June 2012 - April 2016 <br/> University of Rizal System Binangonan <br/> Bachelor of Science in Information Technology
+                            div.flex
+                                div.experience
+                                    h1 Experience
+                                    .content
+                                        p.text Oct 2016 - Present <br/> <span class="title">Freelance Web Developer</span>
+                                        p.text Nov 2015 - Feb 2016 <br/> MSI-ECS (PHILS) INC <br/> <span class="title">Student Trainee (OJT)</span>
+                                div.talks
+                                    h1 Talks
+                                    .content
+                                        p.a Sept 4 2015 <br/> Seminar in Android Programming
+                                        p.b February 2017 <br/> Modern Front End Web Technologies
+                            div.education
+                                h1 Education
+                                p June 2012 - April 2016 <br/> University of Rizal System Binangonan <br/> Bachelor of Science in Information Technology
                     div.sides#light-side
                         div.me
                         div.me-content

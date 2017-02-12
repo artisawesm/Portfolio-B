@@ -59,8 +59,7 @@
 
 .top-image {
     z-index: 1;
-    background: url($imageTop) no-repeat;
-    background-size: cover;
+    background: url($imageTop);
     @extend .background-image;
 }
 

@@ -79,7 +79,7 @@ $(document).ready(function (){
             }
         },
     });
-    
+
     //=========== TYPED JS
     wow = new WOW({
         boxClass: 'wow',
@@ -115,4 +115,5 @@ $(document).ready(function (){
         var newvalueY = height * pageY * -1 - 50;
         $('.top-image').css('background-position', newvalueX + 'px     ' + newvalueY + 'px');
     });
+
 });
