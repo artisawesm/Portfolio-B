@@ -1,5 +1,6 @@
 doctype
 html(lang = 'en')
+    include mixins.pug
     head
         meta(charset = 'UTF-8')
         meta(name = 'viewport', content = 'width=device-width', initial-scale = 1, maximum-scale = 1, user-scalable = 0)
@@ -11,154 +12,22 @@ html(lang = 'en')
         link(rel = 'shortcut icon' type = 'image/png' href = './assets/images/logo.png')
         link(rel = 'stylesheet' type = 'text/css' href = './assets/css/lib/lib.min.css')
         link(rel = 'stylesheet' type = 'text/css' href = './assets/css/app.min.css')
-
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+        +html5shiv
     body
         //===========
-        div.toType
-            p Freelance <span class="emp">Front End Web Developer</span>
-            p Aspiring <span class="emp">UX/UI Designer</span>
-            p This is my <span class="emp">Story</span>
-
-        div.logo
-            a(href = "#intro"): include ./assets/images/logo.svg
-
-        div.button_container#toggle
-            span.top
-            span.middle
-            span.bottom
-
-        div.overlay#overlay
-            nav.overlay-menu
-                ul
-                    li: a(href = "#intro") Intro
-                    li: a(href = "#projects") Projects
-                    li: a(href = "#skills") Skills
-                    li: a(href = "#about") About
-                    li: a(href = "#contact") Contact
+        include constant.pug
         //===========
         div.fullpage
             div.top-image
             div.section#intro-section
-                //- div.back-image
-                div.container-fluid
-                    div.centerString
-                        div(class = "staticString animated fadeInDown") Hello, I'm <span class="name">Art</span>
-                        span.typed
-                        div(class = "scroll-down animated bounce" id = "scroll-indicator")
-                            a(href = "#projects")
-                                span#triangle
-
+                include intro.pug
             div.section#project-section
-                div.side-container
-                    div.awesm-header Projects
-                    div.sides#dark-side
-                        div(class = "code wow animated fadeInUp")
-                    div.sides#light-side
-                        div(class = "design wow animated fadeInDown")
-
+                include project.pug
             div.section#skills-section
-                div.container-fluid
-                    div.awesm-header Skills
-                    div(class = "row flex")
-                        //- col-lg-4 col-md-4 col-sm-4 col-xs-4
-                        div(class = "column")
-                            h1.category Front End
-                            div.skill-htmlcss
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            div.skill-sass
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            div.skill-jquery
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            div.skill-javascript
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            div.skill-angularjs
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                        div(class = "column")
-                            h1.category Back End
-                            div.skill-php
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            div.skill-mysqli
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            h1.category Mobile | OOP
-                            div.skill-android
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            div.skill-java
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                        div(class = "column")
-                            h1.category Design
-                            div.skill-ai
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            div.skill-ps
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            h1.category Html Preprocessor
-                            div.skill-pug
-                                div.skill-icon
-                                div.skill-level
-                                    div.skill-level-val
-                            div.tools
-                                div.skill-git
-                                    div.skill-icon
-                                div.skill-npm
-                                    div.skill-icon
-                                div.skill-gulp
-                                    div.skill-icon
+                include skills.pug
             div.section#about-section
-                div.side-container
-                    div.awesm-header About
-                    div.sides#dark-side
-                        div.about-logo
-                        div.about-content
-                            div.flex
-                                div.experience
-                                    h1 Experience
-                                    .content
-                                        p.a Oct 2016 - Present <br/> <span class="title">Freelance Web Developer</span>
-                                        p.b Nov 2015 - Feb 2016 <br/> MSI-ECS (PHILS) INC <br/> <span class="title">Student Trainee (OJT)</span>
-                                div.talks
-                                    h1 Talks
-                                    .content
-                                        p.a Sept 4 2015 <br/> Seminar in Android Programming
-                            div.education
-                                h1 Education
-                                p June 2012 - April 2016 <br/> University of Rizal System Binangonan <br/> Bachelor of Science in Information Technology
-                    div.sides#light-side
-                        div.me
-                        div.me-content
-                            h1 When design meets code
-                            p Designing different medium is always my niche, but since I learned how to code I became addicted to it, but I do not want to ditch my first love, so why not combine them? then Art as an aspiring front end web developer was born.
-                            h1 Why me?
-                            p knowledgeable of modern front end web technologies and continously expanding my knowledge in web development, I am enthused to grab any opportunities where I can apply and enhance my skills in web design and development.
-
+                include about.pug
             div.section#contact-section
-                div.awesm-header Contact
-                div.contact-content
-                    h1 asd.artsandiego@gmail.com
-
+                include contact.pug
         script(type = 'text/javascript' src = './assets/js/lib/lib.min.js')
         script(type = 'text/javascript' src = './assets/js/app.min.js')
