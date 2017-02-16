@@ -2,7 +2,7 @@
     background-color: $dark;
     overflow: hidden;
 
-    .category {
+    .category-master {
         font-family: $bBook;
         text-align: center;
         color: $light;
@@ -13,15 +13,16 @@
     }
 
     .master-skill {
-        display: flex;
-        border: 0.5em solid $dark;
         position: relative;
+        display: flex;
         z-index: 2;
         cursor: pointer;
+        margin: 0.5em 0 0.5em 0;
+        flex: 1;
     }
 
     .master-icon {
-        height: 7vmin;
+        height: 100%;
         width: 9vmin;
         left: 0;
         background-repeat: no-repeat;
@@ -48,6 +49,19 @@
         @media all and (max-width: 400px) {
             height: 5vmin;
             width: 100%;
+        }
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        .column {
+            flex-basis: 30%;
+            display: flex;
+            flex-direction: column;
+            .category {
+                @extend .category-master;
+            }
         }
     }
 
