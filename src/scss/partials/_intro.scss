@@ -64,16 +64,16 @@
         animation-duration: 2s;
         .name {
             position: relative;
-            &:before {
-                content: " ";
-                height: 2vmin;
-                width: 100%;
-                top: 0;
-                position: absolute;
-                background-color: $light;
-                left: 0;
-                @include animation(fadeInLeftBig, 5s, 1);
-            }
+            // &:before {
+            //     content: " ";
+            //     height: 1vmin;
+            //     width: 100%;
+            //     top: 0;
+            //     position: absolute;
+            //     background-color: $light;
+            //     left: 0;
+            //     @include animation(fadeInLeftBig, 5s, 1);
+            // }
             &:after {
                 content: " ";
                 height: 2vmin;
@@ -92,6 +92,7 @@
         color: $dark;
         line-height: 1em;
         display: inline;
+        padding: 0;
     }
 
     .typed {

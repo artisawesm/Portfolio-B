@@ -307,32 +307,35 @@
     // OTHER SKILLS
     .tools {
         display: flex;
+        .master-tools-icon {
+            position: relative;
+            height: 7vmin;
+            width: 8vmin;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: all 1s;
+            cursor: pointer;
+            @media all and (max-width: 400px) {
+                height: 4vmin;
+                width: 4vmin;
+            }
+        }
         .skill-git {
             @extend .master-skill;
             justify-content: center;
             flex: 1;
             .skill-icon {
-                position: relative;
-                height: 7vmin;
-                width: 8vmin;
-                background-repeat: no-repeat;
-                background-size: contain;
+                @extend .master-tools-icon;
                 background-image: url($imageGit);
-                transition: all 1s;
-                @media all and (max-width: 400px) {
-                    height: 4vmin;
-                    width: 4vmin;
-                }
+            }
+            &:hover:after {
+                opacity: 1;
+            }
+            &:after {
+                @include tooltip("GIT");
+                background-color: $light;
+                color: $dark;
                 z-index: 2;
-                cursor: pointer;
-                &:hover:after {
-                    opacity: 1;
-                }
-                &:after {
-                    @include tooltip("GIT");
-                    background-color: $light;
-                    color: $dark;
-                }
             }
         }
 
@@ -341,26 +344,17 @@
             justify-content: center;
             flex: 1;
             .skill-icon {
-                height: 7vmin;
-                width: 8vmin;
-                background-repeat: no-repeat;
-                background-size: contain;
+                @extend .master-tools-icon;
                 background-image: url($imageNpm);
-                transition: all 1s;
-                @media all and (max-width: 400px) {
-                    height: 4vmin;
-                    width: 4vmin;
-                }
+            }
+            &:hover:after {
+                opacity: 1;
+            }
+            &:after {
+                @include tooltip("NPM");
+                background-color: $light;
+                color: $dark;
                 z-index: 2;
-                cursor: pointer;
-                &:hover:after {
-                    opacity: 1;
-                }
-                &:after {
-                    @include tooltip("NPM");
-                    background-color: $light;
-                    color: $dark;
-                }
             }
         }
 
@@ -369,26 +363,17 @@
             justify-content: center;
             flex: 1;
             .skill-icon {
-                height:7vmin;
-                width: 8vmin;
-                background-repeat: no-repeat;
-                background-size: contain;
+                @extend .master-tools-icon;
                 background-image: url($imageGulp);
-                transition: all 1s;
-                @media all and (max-width: 400px) {
-                    height: 4vmin;
-                    width: 4vmin;
-                }
+            }
+            &:hover:after {
+                opacity: 1;
+            }
+            &:after {
+                @include tooltip("GULP");
+                background-color: $light;
+                color: $dark;
                 z-index: 2;
-                cursor: pointer;
-                &:hover:after {
-                    opacity: 1;
-                }
-                &:after {
-                    @include tooltip("GULP");
-                    background-color: $light;
-                    color: $dark;
-                }
             }
         }
     }

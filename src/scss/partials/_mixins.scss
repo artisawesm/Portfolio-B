@@ -26,7 +26,7 @@
 }
 @mixin tooltip($title) {
     font-family: $bRegular;
-    font-size: 5vmin;
+    font-size: 3vmin;
     display: flex;
     align-items: center;
     justify-content: center;
