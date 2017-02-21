@@ -55,7 +55,7 @@
                     font-size: 10vmin;
                 }
             }
-            .flex {
+            .toFlex {
                 display: flex;
                 .experience {
                     cursor: pointer;
@@ -66,43 +66,61 @@
                     .content {
                         display: flex;
                         flex-direction: column;
-                        .text {
-                            position: relative;
-                            flex: 1;
-                            .title:after {
-                                content: " ";
-                                height: 2px;
-                                width: 0;
-                                position: absolute;
-                                bottom: 0;
-                                left: 50%;
+                        span {
+                            &:nth-of-type(1) {
                                 transition: all 0.5s;
-                                transform: translateX(-50%);
-                                background-color: $light;
                             }
                         }
                     }
-                    &:hover > .content .title:after {
-                        width: 100%;
+                    &:hover .content > p {
+                        &:nth-of-type(1) .title {
+                            background-color: $light;
+                            color: $dark;
+                            padding: 2px;
+                        }
+                        &:nth-of-type(2) .title {
+                            background-color: $light;
+                            color: $dark;
+                            padding: 2px;
+                        }
                     }
                 }
-
                 .talks {
                     display: flex;
                     flex-direction: column;
                     flex: 1;
+                    cursor: pointer;
+                    z-index: 100;
                     .content {
                         display: flex;
                         flex-direction: column;
                         .a {flex: 1;}
-                        // .b {flex: 1;}
+                        .title {
+                            transition: all 0.5s;
+                        }
+                    }
+                    &:hover .content > p > .title {
+                        background-color: $light;
+                        color: $dark;
+                        padding: 2px;
                     }
                 }
             }
-            .eductaion {
-                // flex: 1;
+            .education {
+                position: absolute;
+                cursor: pointer;
+                z-index: 100;
+                p {
+                    .title {
+                        transition: all 0.5s;
+                    }
+                }
+                &:hover p > .title {
+                    background-color: $light;
+                    color: $dark;
+                    padding: 2px;
+                }
             }
-
         }
     }
 

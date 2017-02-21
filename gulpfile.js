@@ -13,7 +13,7 @@ var uglifycss = require('gulp-uglifycss');
 
 var path = {
     //assets source
-    pug: './src/index.pug',
+    pug: './src/*.pug',
     scss: './src/scss/**/*.scss',
     js: './src/assets/js/*.js',
     image: './src/assets/images/*',

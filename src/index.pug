@@ -1,6 +1,6 @@
 doctype
 html(lang = 'en')
-    include mixins.pug
+    include _mixins.pug
     head
         meta(charset = 'UTF-8')
         meta(name = 'viewport', content = 'width=device-width', initial-scale = 1, maximum-scale = 1, user-scalable = 0)
@@ -15,19 +15,19 @@ html(lang = 'en')
         +html5shiv
     body
         //===========
-        include constant.pug
+        include _constant.pug
         //===========
         div.fullpage
             div.top-image
             div.section#intro-section
-                include intro.pug
+                include _intro.pug
             div.section#project-section
-                include project.pug
+                include _project.pug
             div.section#skills-section
-                include skills.pug
+                include _skills.pug
             div.section#about-section
-                include about.pug
+                include _about.pug
             div.section#contact-section
-                include contact.pug
+                include _contact.pug
         script(type = 'text/javascript' src = './assets/js/lib/lib.min.js')
         script(type = 'text/javascript' src = './assets/js/app.min.js')
