@@ -121,6 +121,11 @@
                     padding: 2px;
                 }
             }
+            .card {
+                h1:after {
+                    content: "|";
+                }
+            }
         }
     }
 

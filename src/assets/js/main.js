@@ -11,6 +11,11 @@ $(document).ready(function (){
         $('#overlay').toggleClass('open');
     });
 
+    //PROJECTS
+    $('.code').click(function() {
+        $('#code').toggleClass('show');
+    });
+
     //=========== FULLPAGE JS
     var awesmHeader = function($element){
         $($element).find('.awesm-header').addClass('animated fadeInLeftBig');
@@ -80,7 +85,7 @@ $(document).ready(function (){
         },
     });
 
-    //=========== TYPED JS
+    //=========== WOW JS
     wow = new WOW({
         boxClass: 'wow',
         animateClass: 'animated',
