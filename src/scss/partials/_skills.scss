@@ -16,7 +16,6 @@
         position: relative;
         display: flex;
         z-index: 2;
-        cursor: pointer;
         margin: 0.5em 0 0.5em 0;
         flex: 1;
     }
@@ -28,7 +27,6 @@
         background-repeat: no-repeat;
         background-size: contain;
         z-index: 2;
-        cursor: pointer;
     }
 
     .master-skill-level {
@@ -191,7 +189,6 @@
             @extend .master-icon;
             background-image: url($imageMysqli);
             z-index: 2;
-            cursor: pointer;
             &:hover:after {
                 opacity: 1;
             }
@@ -213,7 +210,6 @@
             @extend .master-icon;
             background-image: url($imageAndroid);
             z-index: 2;
-            cursor: pointer;
             &:hover:after {
                 opacity: 1;
             }
@@ -235,7 +231,6 @@
             @extend .master-icon;
             background-image: url($imageJava);
             z-index: 2;
-            cursor: pointer;
             &:hover:after {
                 opacity: 1;
             }
@@ -257,7 +252,6 @@
             @extend .master-icon;
             background-image: url($imageAi);
             z-index: 2;
-            cursor: pointer;
             &:hover:after {
                 opacity: 1;
             }
@@ -279,7 +273,6 @@
             @extend .master-icon;
             background-image: url($imagePs);
             z-index: 2;
-            cursor: pointer;
             &:hover:after {
                 opacity: 1;
             }
@@ -301,7 +294,6 @@
             @extend .master-icon;
             background-image: url($imagePug);
             z-index: 2;
-            cursor: pointer;
             &:hover:after {
                 opacity: 1;
             }
@@ -328,7 +320,6 @@
             background-repeat: no-repeat;
             background-size: contain;
             transition: all 1s;
-            cursor: pointer;
             @media all and (max-width: 400px) {
                 height: 4vmin;
                 width: 4vmin;

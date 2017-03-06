@@ -13,6 +13,17 @@
                 opacity: 1;
             }
         }
+        #design {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: $light;
+            transition: all 0.5s;
+            opacity: 0;
+            &.show {
+                opacity: 1;
+            }
+        }
     }
 
     .sides {
@@ -63,6 +74,7 @@
         @extend .code-design-master;
         background-color: $light;
         .design {
+            opacity: 1;
             background-image: url($design);
             @extend .code-design-content-master;
             position: relative;

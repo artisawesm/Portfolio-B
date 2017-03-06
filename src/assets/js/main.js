@@ -14,6 +14,12 @@ $(document).ready(function (){
     //PROJECTS
     $('.code').click(function() {
         $('#code').toggleClass('show');
+        $('.design').toggle(500);
+    });    
+
+    $('.design').click(function() {
+        $('#design').toggleClass('show');
+        $('.code').toggle(500);
     });
 
     //=========== FULLPAGE JS
