@@ -2,11 +2,14 @@
     background-color: $dark;
     .contact-content {
         h1 {
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+            z-index: 100;
             margin: auto 0;
             position: absolute;
-            width: 100%;
             height: auto;
-            text-align: center;
+            // text-align: center;
             font-family: $bBold;
             color: $light;
             font-size: 5vmin;
