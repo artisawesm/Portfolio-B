@@ -12,6 +12,28 @@
             &.show {
                 opacity: 1;
             }
+            .code-content {
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                padding: 5%;
+                .code-blocks {
+                    height: 100px;
+                    width: 150px;
+                    background-color: $accent;
+                    margin-right: 5px;
+                    h1 {
+                        color: $dark;
+                        height: auto;
+                        width: 100%;
+                        text-align: center;
+                        font-family: $bBook;
+                    }
+                }
+            }
         }
         #design {
             position: absolute;
@@ -22,6 +44,28 @@
             opacity: 0;
             &.show {
                 opacity: 1;
+            }
+            .design-content {
+                flex: 1;
+                display: flex;
+                justify-content: flex-start;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                padding: 5%;
+                .design-blocks {
+                    height: 100px;
+                    width: 150px;
+                    background-color: $dark;
+                    margin-right: 5px;
+                    h1 {
+                        color: $light;
+                        height: auto;
+                        width: 100%;
+                        text-align: center;
+                        font-family: $bBook;
+                    }
+                }
             }
         }
     }
